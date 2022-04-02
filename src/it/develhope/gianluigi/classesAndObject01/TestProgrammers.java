@@ -1,6 +1,4 @@
-package it.develhope.gianluigi.exercises.classesAndObject01;
-
-import it.develhope.gianluigi.exercises.classesAndObject01.Programmer;
+package it.develhope.gianluigi.classesAndObject01;
 
 public class TestProgrammers {
     public static void runTest() {

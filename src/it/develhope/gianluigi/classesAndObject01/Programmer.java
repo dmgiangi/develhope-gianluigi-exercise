@@ -1,4 +1,4 @@
-package it.develhope.gianluigi.exercises.classesAndObject01;
+package it.develhope.gianluigi.classesAndObject01;
 
 public class Programmer {
     private String name;
