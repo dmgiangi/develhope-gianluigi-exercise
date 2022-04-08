@@ -1,16 +1,24 @@
 package it.develhope.gianluigi.classesAndObject01;
 
 
+import it.develhope.gianluigi.Exercise;
+
 /**
  * the TestProgrammers class create 2 Programmer instance and use it
+ * this class implements the Exercise interface
  */
-public class TestProgrammers {
+public class TestProgrammers implements Exercise {
     /**
-     * The runTest method implement the intent of the class.
-     * the method is declared as static because our purpose is only to run the test,
-     * and we don't need the instantiated object anymore.
+     * @return the name of the exercise
      */
-    public static void runTest() {
+    public String getName(){
+        return "Classes and Objects - 01";
+    }
+
+    /**
+     * The runExercise method implement the intent of the class.
+     */
+    public void runExercise() {
         Programmer firstProgrammer = new Programmer("Giulio", 23, false);
         Programmer secondProgrammer = new Programmer("Benedetta", 31, true);
 

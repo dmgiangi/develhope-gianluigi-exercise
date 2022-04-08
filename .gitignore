@@ -1,6 +1,7 @@
 #file
 .DS_Store
 *.iml
+*.class
 
 #folder
 .idea

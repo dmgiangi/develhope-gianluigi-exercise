@@ -1,12 +1,13 @@
 package it.develhope.gianluigi;
 
-import it.develhope.gianluigi.classesAndObject01.TestProgrammers;
-
 /**
- *
+ * this class start the menu that allow to execute every exercise
  */
 public class Main {
+    /**
+     * Start the menu that allow to execute every exercise
+     */
     public static void main(String[] args) {
-        TestProgrammers.runTest();
+        new Menu().runMenu();
     }
 }
