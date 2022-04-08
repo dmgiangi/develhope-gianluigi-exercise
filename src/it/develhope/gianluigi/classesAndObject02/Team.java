@@ -10,7 +10,7 @@ public class Team {
         this.p2 = p2;
     }
     public void printTeamDetails() {
-        System.out.printf("\n*** Team: %s ***\n\n", teamName);
+        System.out.printf("%n*** Team: %s ***%n%n", teamName);
         p1.printProgrammerDetails();
         p2.printProgrammerDetails();
     }

@@ -35,21 +35,21 @@ public class Programmer {
      * Print a string when this method is called
      */
     public void drinkCoffe() {
-        System.out.printf("Espresso is the secret!\n");
+        System.out.printf("Espresso is the secret!%n");
     }
 
     /**
      * Print a string with format specifiers when this method is called
      */
     public void printDetails() {
-        System.out.printf("%s is a %d-yo programmer\n", this.name, this.age);
+        System.out.printf("%s is a %d-yo programmer%n", this.name, this.age);
     }
 
     /**
      * Print a string with format specifiers when this method is called
      */
     public void hasGlasses() {
-        System.out.printf("Is %s wearing glasses? %b\n", this.name, this.wearsGlasses);
+        System.out.printf("Is %s wearing glasses? %b%n", this.name, this.wearsGlasses);
     }
 
     /**

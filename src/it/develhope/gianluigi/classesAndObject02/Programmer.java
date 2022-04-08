@@ -13,7 +13,7 @@ public class Programmer {
 
     public void printProgrammerDetails() {
         System.out.printf(
-                "name: %s,\nProgramming Language: %s\nYears of experience: %s\n",
+                "name: %s,%nProgramming Language: %s%nYears of experience: %s%n",
                 name,
                 programingLanguage,
                 yearsOfExperience

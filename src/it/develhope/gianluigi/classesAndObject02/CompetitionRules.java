@@ -7,7 +7,7 @@ public class CompetitionRules {
 
     public static void printRules() {
         System.out.printf(
-                "Rules:\n\t- %s\n\t- %s\n\t- %s\n",
+                "Rules:%n\t- %s%n\t- %s%n\t- %s%n",
                 competitionRule1,
                 competitionRule2,
                 competitionRule3

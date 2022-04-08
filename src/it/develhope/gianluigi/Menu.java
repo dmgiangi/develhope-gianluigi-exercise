@@ -1,7 +1,8 @@
 package it.develhope.gianluigi;
 
 import it.develhope.gianluigi.InputandOutput01.PrintYourName;
-import it.develhope.gianluigi.InputandOutput02.PrintYourNameAndSurname;
+import it.develhope.gianluigi.InputandOutput04.PrintYourNameAndPi;
+import it.develhope.gianluigi.InputandOutput05.PrintYourAgeFromInput;
 import it.develhope.gianluigi.classesAndObject01.TestProgrammers;
 import it.develhope.gianluigi.classesAndObject02.Competition;
 
@@ -14,11 +15,6 @@ import java.util.Scanner;
  */
 public class Menu {
     /**
-     * the scanner instance is a private attribute and is used to read from console the choice of the user.
-     */
-    private final Scanner scanner = new Scanner(System.in);
-
-    /**
      * this array of Exercise contains an instance of each exercise developed
      * thanks to the use of the interfaces we can manage the exercises in the same way
      */
@@ -26,7 +22,10 @@ public class Menu {
             new TestProgrammers(),
             new Competition(),
             new PrintYourName(),
-            new PrintYourNameAndSurname()
+            new it.develhope.gianluigi.InputandOutput02.PrintYourNameAndSurname(),
+            new it.develhope.gianluigi.InputandOutput03.PrintYourNameAndSurname(),
+            new PrintYourNameAndPi(),
+            new PrintYourAgeFromInput()
     };
 
     /**
@@ -39,7 +38,7 @@ public class Menu {
         System.out.println("\n\n*** Gianluigi De Marco DevelHope exercises ***\n");
         System.out.println("0 - exit");
         for(int index = 1; index <= exercises.length; index++) {
-            System.out.printf("%d - %s\n", index, exercises[index-1].getName());
+            System.out.printf("%d - %s%n", index, exercises[index-1].getName());
         }
     }
 
@@ -50,28 +49,29 @@ public class Menu {
      * @return the chosen menu entry
      */
     private int getChoice() {
+        Scanner scanner = new Scanner(System.in);
         int choice = -1;
         while(choice == -1) {
             System.out.print("Choose your option: ");
             try{
                 choice = scanner.nextInt();
+                if(choice < 0 || choice > exercises.length){
+                    System.out.println("Please insert an integer value between 0 and " + exercises.length);
+                    choice = -1;
+                }
             } catch (InputMismatchException ex) {
                 System.out.println("The choice must be an integer.");
-                scanner.next();
             } catch (Exception E){
                 System.out.println("Unhandled exception.... Sorry :(");
             }
-            if(choice < 0 || choice > exercises.length){
-                System.out.println("Please insert an integer value between 0 and " + exercises.length);
-                choice = -1;
-            }
+
         }
         System.out.println();
         return choice;
     }
 
     /**
-     *
+     * this method permit waiting after the exercise execution so the user can read the result.
      */
     private void pressAnyKey() {
         System.out.println("\nPress any key to return to the main menu.");
