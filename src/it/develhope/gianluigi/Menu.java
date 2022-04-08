@@ -1,6 +1,7 @@
 package it.develhope.gianluigi;
 
 import it.develhope.gianluigi.classesAndObject01.TestProgrammers;
+import it.develhope.gianluigi.classesAndObject02.Competition;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -20,14 +21,14 @@ public class Menu {
      */
     private final Exercise[] exercises = {
             new TestProgrammers(),
-            new TestProgrammers(),
+            new Competition(),
     };
 
     /**
      * print the menu.
      * the first menu entry is the exit case then
      * it scrolls the array and print:
-     * [the numeber of the exercise in the menu] - [name of the exercise]
+     * [the number of the exercise in the menu] - [name of the exercise]
      */
     private void printMenu() {
         System.out.println("\n\n*** Gianluigi De Marco DevelHope exercises ***\n");
@@ -39,7 +40,7 @@ public class Menu {
 
     /**
      * take the user choice
-     * this method asks the user for his choice, manages the exeption
+     * this method asks the user for his choice, manages the exception
      * and check that the choice is a valid menu number.
      * @return the chosen menu entry
      */
