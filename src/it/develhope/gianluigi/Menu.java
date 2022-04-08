@@ -1,8 +1,11 @@
 package it.develhope.gianluigi;
 
+import it.develhope.gianluigi.InputandOutput01.PrintYourName;
+import it.develhope.gianluigi.InputandOutput02.PrintYourNameAndSurname;
 import it.develhope.gianluigi.classesAndObject01.TestProgrammers;
 import it.develhope.gianluigi.classesAndObject02.Competition;
 
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -22,6 +25,8 @@ public class Menu {
     private final Exercise[] exercises = {
             new TestProgrammers(),
             new Competition(),
+            new PrintYourName(),
+            new PrintYourNameAndSurname()
     };
 
     /**
@@ -66,6 +71,18 @@ public class Menu {
     }
 
     /**
+     *
+     */
+    private void pressAnyKey() {
+        System.out.println("\nPress any key to return to the main menu.");
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            System.out.println("Input/Output unhandled exception.");
+        }
+    }
+
+    /**
      * this method is the core of the menu
      * loop until the user don't insert 0 and start the chosen exercise
      */
@@ -76,6 +93,7 @@ public class Menu {
             choice = getChoice();
             if(choice != 0) {
                 exercises[choice-1].runExercise();
+                pressAnyKey();
             }
         }
         System.out.println("\nGoodBye!!!");
