@@ -25,7 +25,9 @@ public class Menu {
             new it.develhope.gianluigi.InputandOutput02.PrintYourNameAndSurname(),
             new it.develhope.gianluigi.InputandOutput03.PrintYourNameAndSurname(),
             new PrintYourNameAndPi(),
-            new PrintYourAgeFromInput()
+            new PrintYourAgeFromInput(),
+            new it.develhope.gianluigi.javadoc01.Tester(),
+            new it.develhope.gianluigi.javadoc02.Tester()
     };
 
     /**
