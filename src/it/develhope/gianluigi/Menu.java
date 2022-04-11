@@ -37,7 +37,7 @@ public class Menu {
      * [the number of the exercise in the menu] - [name of the exercise]
      */
     private void printMenu() {
-        System.out.println("\n\n*** Gianluigi De Marco DevelHope exercises ***\n");
+        System.out.printf("%n%n*** Gianluigi De Marco DevelHope exercises ***%n%n");
         System.out.println("0 - exit");
         for (int index = 1; index <= exercises.length; index++) {
             System.out.printf("%d - %s%n", index, exercises[index - 1].getName());
@@ -77,7 +77,7 @@ public class Menu {
      * this method permit waiting after the exercise execution so the user can read the result.
      */
     private void pressAnyKey() {
-        System.out.println("\nPress any key to return to the main menu.");
+        System.out.printf("%nPress any key to return to the main menu.");
         try {
             System.in.read();
         } catch (IOException e) {
@@ -99,6 +99,6 @@ public class Menu {
                 pressAnyKey();
             }
         }
-        System.out.println("\nGoodBye!!!");
+        System.out.printf("%nGoodBye!!!%n");
     }
 }
