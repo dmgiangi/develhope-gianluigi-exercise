@@ -4,7 +4,7 @@ import it.develhope.gianluigi.Exercise;
 
 /**
  * this class test the implementation of the WordGames Class
- * implement the interface Exercise, so it can be used in the exercises menu
+ * implements the interface Exercise, so it can be used in the exercises menu
  *
  * @author Gianluigi De Marco
  */

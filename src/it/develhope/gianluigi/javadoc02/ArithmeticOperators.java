@@ -45,6 +45,7 @@ public class ArithmeticOperators {
      * @param a int numerator
      * @param b int divisor
      * @return the int quotient
+     * @throws java.lang.ArithmeticException if "b" is zero
      */
     int div(int a, int b) {
         return (a / b);

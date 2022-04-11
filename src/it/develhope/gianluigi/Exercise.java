@@ -6,8 +6,7 @@ package it.develhope.gianluigi;
 public interface Exercise {
     /**
      * getName provides the name of the exercise.
-     * I have not used an attribute because is static and final for definition in an interfaces
-     * so in the class that implements this interfaces it'enough to return the name from this method
+     *
      * @return the name of the exercise
      */
     String getName();

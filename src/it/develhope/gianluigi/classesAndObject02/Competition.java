@@ -7,7 +7,10 @@ public class Competition implements Exercise {
         return "Classes and Objects - 02";
     }
     public void runExercise() {
-        CompetitionRules.printRules();
+        CompetitionRules competitionRules = CompetitionRules.getInstance();
+
+        competitionRules.printRules();
+
         Team A = new Team(
                 "Fenix",
                 new Programmer(
