@@ -1,20 +1,36 @@
 package it.develhope.gianluigi.defaultMethodsOverride;
 
-import it.develhope.gianluigi.Exercise;
+import java.util.Objects;
 
-public class SmartphonePrice implements Exercise {
-    /**
-     * this method return the name of the exercise for the menu
-     */
-    public String getName() {
-        return "Javadoc 02";
+public class SmartphonePrice implements Cloneable {
+    private String priceType;
+    private double priceInEuros;
+
+    public SmartphonePrice(String priceType, double priceInEuros) {
+        this.priceType = priceType;
+        this.priceInEuros = priceInEuros;
     }
 
-    /**
-     * this method matches the main method for this exercises
-     * test the functionality cloneable class that we have created
-     */
-    public void runExercise() {
+    @Override
+    public String toString() {
+        return String.format("%.2f € for %s", priceInEuros, priceType);
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SmartphonePrice that = (SmartphonePrice) o;
+        return Double.compare(that.priceInEuros, priceInEuros) == 0 && Objects.equals(priceType, that.priceType);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(priceType, priceInEuros);
+    }
+
+    @Override
+    public SmartphonePrice clone() throws CloneNotSupportedException {
+            return (SmartphonePrice) super.clone();
     }
 }

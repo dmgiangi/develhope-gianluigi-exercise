@@ -27,7 +27,8 @@ public class Menu {
             new PrintYourNameAndPi(),
             new PrintYourAgeFromInput(),
             new it.develhope.gianluigi.javadoc01.Tester(),
-            new it.develhope.gianluigi.javadoc02.Tester()
+            new it.develhope.gianluigi.javadoc02.Tester(),
+            new it.develhope.gianluigi.defaultMethodsOverride.Tester()
     };
 
     /**
