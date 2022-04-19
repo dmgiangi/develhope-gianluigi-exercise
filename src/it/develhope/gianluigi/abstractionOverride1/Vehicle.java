@@ -1,4 +1,4 @@
-package it.develhope.gianluigi.AbstractionOverride1;
+package it.develhope.gianluigi.abstractionOverride1;
 
 public abstract class Vehicle {
     public String type = "Vehicle";

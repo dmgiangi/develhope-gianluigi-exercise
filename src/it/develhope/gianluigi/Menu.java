@@ -7,6 +7,7 @@ import it.develhope.gianluigi.classesAndObject01.TestProgrammers;
 import it.develhope.gianluigi.classesAndObject02.Competition;
 import it.develhope.gianluigi.interfaces2.Interfaces2Tester;
 import it.develhope.gianluigi.overload.TestingOverload;
+import it.develhope.gianluigi.static1.TesterStatic;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -31,9 +32,10 @@ public class Menu {
             new it.develhope.gianluigi.javadoc01.Tester(),
             new it.develhope.gianluigi.javadoc02.Tester(),
             new it.develhope.gianluigi.defaultMethodsOverride.Tester(),
-            new it.develhope.gianluigi.AbstractionOverride1.Tester(),
+            new it.develhope.gianluigi.abstractionOverride1.Tester(),
             new Interfaces2Tester(),
-            new TestingOverload()
+            new TestingOverload(),
+            new TesterStatic()
     };
 
     /**
