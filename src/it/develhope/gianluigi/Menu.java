@@ -5,6 +5,7 @@ import it.develhope.gianluigi.InputandOutput04.PrintYourNameAndPi;
 import it.develhope.gianluigi.InputandOutput05.PrintYourAgeFromInput;
 import it.develhope.gianluigi.classesAndObject01.TestProgrammers;
 import it.develhope.gianluigi.classesAndObject02.Competition;
+import it.develhope.gianluigi.interfaces2.Interfaces2Tester;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -29,7 +30,8 @@ public class Menu {
             new it.develhope.gianluigi.javadoc01.Tester(),
             new it.develhope.gianluigi.javadoc02.Tester(),
             new it.develhope.gianluigi.defaultMethodsOverride.Tester(),
-            new it.develhope.gianluigi.AbstractionOverride1.Tester()
+            new it.develhope.gianluigi.AbstractionOverride1.Tester(),
+            new Interfaces2Tester()
     };
 
     /**
@@ -81,6 +83,7 @@ public class Menu {
     private void pressAnyKey() {
         System.out.printf("%nPress any key to return to the main menu.");
         try {
+            //noinspection ResultOfMethodCallIgnored
             System.in.read();
         } catch (IOException e) {
             System.out.println("Input/Output unhandled exception.");
