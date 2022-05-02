@@ -8,7 +8,8 @@ import it.develhope.gianluigi.classesAndObject02.Competition;
 import it.develhope.gianluigi.interfaces2.Interfaces2Tester;
 import it.develhope.gianluigi.overload.TestingOverload;
 import it.develhope.gianluigi.static1.TesterStatic;
-import it.develhope.gianluigi.wildcard01.TesterWildcard;
+import it.develhope.gianluigi.wildcard01.TesterWildcard01;
+import it.develhope.gianluigi.wildcard02.TesterWildcard02;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -37,7 +38,8 @@ public class Menu {
             new Interfaces2Tester(),
             new TestingOverload(),
             new TesterStatic(),
-            new TesterWildcard()
+            new TesterWildcard01(),
+            new TesterWildcard02()
     };
 
     /**

@@ -5,10 +5,10 @@ import it.develhope.gianluigi.Exercise;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TesterWildcard implements Exercise {
+public class TesterWildcard01 implements Exercise {
     @Override
     public String getName() {
-        return "Wildcard 01";
+        return "Generics Wildcard 01";
     }
 
     @Override
@@ -25,16 +25,16 @@ public class TesterWildcard implements Exercise {
         List<Student> students = new ArrayList<>();
         students.add(
                 new Student(
-                "Lisa",
-                "Stuart",
-                Student.getAverageMarks(individualMarksListLisa)
+                        "Lisa",
+                        "Stuart",
+                        Student.getAverageMarks(individualMarksListLisa)
                 )
         );
         students.add(
                 new Student(
-                "Jeremy",
-                "Green",
-                Student.getAverageMarks(projectMarksListJeremy)
+                        "Jeremy",
+                        "Green",
+                        Student.getAverageMarks(projectMarksListJeremy)
                 )
         );
 
