@@ -3,6 +3,7 @@ package it.develhope.gianluigi;
 import it.develhope.gianluigi.InputandOutput01.PrintYourName;
 import it.develhope.gianluigi.InputandOutput04.PrintYourNameAndPi;
 import it.develhope.gianluigi.InputandOutput05.PrintYourAgeFromInput;
+import it.develhope.gianluigi.OtherOperators.TestingOtherOperators;
 import it.develhope.gianluigi.classesAndObject01.TestProgrammers;
 import it.develhope.gianluigi.classesAndObject02.Competition;
 import it.develhope.gianluigi.interfaces2.Interfaces2Tester;
@@ -39,7 +40,9 @@ public class Menu {
             new TestingOverload(),
             new TesterStatic(),
             new TesterWildcard01(),
-            new TesterWildcard02()
+            new TesterWildcard02(),
+
+            new TestingOtherOperators()
     };
 
     /**
@@ -76,6 +79,7 @@ public class Menu {
                 }
             } catch (InputMismatchException ex) {
                 System.out.println("The choice must be an integer.");
+                scanner.next();
             } catch (Exception E) {
                 System.out.println("Unhandled exception.... Sorry :(");
             }
