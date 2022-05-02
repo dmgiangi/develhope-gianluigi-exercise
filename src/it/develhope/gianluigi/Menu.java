@@ -10,6 +10,7 @@ import it.develhope.gianluigi.interfaces2.Interfaces2Tester;
 import it.develhope.gianluigi.overload.TestingOverload;
 import it.develhope.gianluigi.static1.TesterStatic;
 import it.develhope.gianluigi.variableMethodsConstructor01.TestVariableMethodConstructor01;
+import it.develhope.gianluigi.variableMethodsConstructor02.TestVariableMethodConstructor02;
 import it.develhope.gianluigi.wildcard01.TesterWildcard01;
 import it.develhope.gianluigi.wildcard02.TesterWildcard02;
 
@@ -43,7 +44,7 @@ public class Menu {
             new TesterWildcard01(),
             new TesterWildcard02(),
             new TestVariableMethodConstructor01(),
-
+            new TestVariableMethodConstructor02(),
             new TestingOtherOperators()
     };
 
